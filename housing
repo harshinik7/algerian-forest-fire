@@ -2,13 +2,13 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "id": "f9f5153b",
+   "id": "82525a0a",
    "metadata": {
     "papermill": {
-     "duration": 0.006932,
-     "end_time": "2023-08-31T13:41:16.235198",
+     "duration": 0.00682,
+     "end_time": "2023-08-31T14:13:13.299402",
      "exception": false,
-     "start_time": "2023-08-31T13:41:16.228266",
+     "start_time": "2023-08-31T14:13:13.292582",
      "status": "completed"
     },
     "tags": []
@@ -21,13 +21,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "31dba63d",
+   "id": "26e4166a",
    "metadata": {
     "papermill": {
-     "duration": 0.005823,
-     "end_time": "2023-08-31T13:41:16.247309",
+     "duration": 0.005612,
+     "end_time": "2023-08-31T14:13:13.311065",
      "exception": false,
-     "start_time": "2023-08-31T13:41:16.241486",
+     "start_time": "2023-08-31T14:13:13.305453",
      "status": "completed"
     },
     "tags": []
@@ -49,19 +49,19 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "009ff066",
+   "id": "ca6ed79d",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-08-31T13:41:16.261790Z",
-     "iopub.status.busy": "2023-08-31T13:41:16.261170Z",
-     "iopub.status.idle": "2023-08-31T13:41:16.312619Z",
-     "shell.execute_reply": "2023-08-31T13:41:16.311330Z"
+     "iopub.execute_input": "2023-08-31T14:13:13.325671Z",
+     "iopub.status.busy": "2023-08-31T14:13:13.324513Z",
+     "iopub.status.idle": "2023-08-31T14:13:13.380728Z",
+     "shell.execute_reply": "2023-08-31T14:13:13.379259Z"
     },
     "papermill": {
-     "duration": 0.062021,
-     "end_time": "2023-08-31T13:41:16.315371",
+     "duration": 0.066585,
+     "end_time": "2023-08-31T14:13:13.383485",
      "exception": false,
-     "start_time": "2023-08-31T13:41:16.253350",
+     "start_time": "2023-08-31T14:13:13.316900",
      "status": "completed"
     },
     "tags": []
@@ -85,13 +85,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "d8ee1105",
+   "id": "13935a27",
    "metadata": {
     "papermill": {
-     "duration": 0.006069,
-     "end_time": "2023-08-31T13:41:16.327970",
+     "duration": 0.006014,
+     "end_time": "2023-08-31T14:13:13.395782",
      "exception": false,
-     "start_time": "2023-08-31T13:41:16.321901",
+     "start_time": "2023-08-31T14:13:13.389768",
      "status": "completed"
     },
     "tags": []
@@ -104,19 +104,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "e7a6c10b",
+   "id": "27449317",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-08-31T13:41:16.341919Z",
-     "iopub.status.busy": "2023-08-31T13:41:16.341532Z",
-     "iopub.status.idle": "2023-08-31T13:41:16.352875Z",
-     "shell.execute_reply": "2023-08-31T13:41:16.351815Z"
+     "iopub.execute_input": "2023-08-31T14:13:13.410744Z",
+     "iopub.status.busy": "2023-08-31T14:13:13.409500Z",
+     "iopub.status.idle": "2023-08-31T14:13:13.476809Z",
+     "shell.execute_reply": "2023-08-31T14:13:13.475446Z"
     },
     "papermill": {
-     "duration": 0.021379,
-     "end_time": "2023-08-31T13:41:16.355393",
+     "duration": 0.077923,
+     "end_time": "2023-08-31T14:13:13.479665",
      "exception": false,
-     "start_time": "2023-08-31T13:41:16.334014",
+     "start_time": "2023-08-31T14:13:13.401742",
      "status": "completed"
     },
     "tags": []
@@ -125,7 +125,7 @@
     {
      "data": {
       "application/javascript": [
-       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 4, \"interactionType\": 1, \"questionType\": 1, \"questionId\": \"1_LoadHomeData\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.5, \"interactionType\": 1, \"questionType\": 1, \"questionId\": \"1_LoadHomeData\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
       ],
       "text/plain": [
        "<IPython.core.display.Javascript object>"
@@ -137,10 +137,10 @@
     {
      "data": {
       "text/markdown": [
-       "<span style=\"color:#ccaa33\">Check:</span> When you've updated the starter code, `check()` will tell you whether your code is correct. You need to update the code that creates variable `home_data`"
+       "<span style=\"color:#33cc33\">Correct</span>"
       ],
       "text/plain": [
-       "Check: When you've updated the starter code, `check()` will tell you whether your code is correct. You need to update the code that creates variable `home_data`"
+       "Correct"
       ]
      },
      "metadata": {},
@@ -154,7 +154,7 @@
     "iowa_file_path = '../input/home-data-for-ml-course/train.csv'\n",
     "\n",
     "# Fill in the line below to read the file into a variable home_data\n",
-    "home_data = ____\n",
+    "home_data = pd.read_csv(iowa_file_path)\n",
     "\n",
     "# Call line below with no argument to check that you've loaded the data correctly\n",
     "step_1.check()"
@@ -163,43 +163,94 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "9ec84ed0",
+   "id": "bf10bd2f",
    "metadata": {
-    "collapsed": true,
     "execution": {
-     "iopub.execute_input": "2023-08-31T13:41:16.370916Z",
-     "iopub.status.busy": "2023-08-31T13:41:16.370298Z",
-     "iopub.status.idle": "2023-08-31T13:41:16.374745Z",
-     "shell.execute_reply": "2023-08-31T13:41:16.373504Z"
-    },
-    "jupyter": {
-     "outputs_hidden": true
+     "iopub.execute_input": "2023-08-31T14:13:13.495259Z",
+     "iopub.status.busy": "2023-08-31T14:13:13.494787Z",
+     "iopub.status.idle": "2023-08-31T14:13:13.510071Z",
+     "shell.execute_reply": "2023-08-31T14:13:13.508674Z"
     },
     "papermill": {
-     "duration": 0.015429,
-     "end_time": "2023-08-31T13:41:16.377407",
+     "duration": 0.026503,
+     "end_time": "2023-08-31T14:13:13.512805",
      "exception": false,
-     "start_time": "2023-08-31T13:41:16.361978",
+     "start_time": "2023-08-31T14:13:13.486302",
      "status": "completed"
     },
     "tags": []
    },
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 2, \"questionType\": 1, \"questionId\": \"1_LoadHomeData\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#3366cc\">Hint:</span> Use the `pd.read_csv` function"
+      ],
+      "text/plain": [
+       "Hint: Use the `pd.read_csv` function"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 3, \"questionType\": 1, \"questionId\": \"1_LoadHomeData\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc99\">Solution:</span> \n",
+       "```python\n",
+       "home_data = pd.read_csv(iowa_file_path)\n",
+       "```"
+      ],
+      "text/plain": [
+       "Solution: \n",
+       "```python\n",
+       "home_data = pd.read_csv(iowa_file_path)\n",
+       "```"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
    "source": [
     "# Lines below will give you a hint or solution code\n",
-    "#step_1.hint()\n",
-    "#step_1.solution()"
+    "step_1.hint()\n",
+    "step_1.solution()"
    ]
   },
   {
    "cell_type": "markdown",
-   "id": "50451a17",
+   "id": "353233f8",
    "metadata": {
     "papermill": {
-     "duration": 0.006347,
-     "end_time": "2023-08-31T13:41:16.390466",
+     "duration": 0.006851,
+     "end_time": "2023-08-31T14:13:13.527095",
      "exception": false,
-     "start_time": "2023-08-31T13:41:16.384119",
+     "start_time": "2023-08-31T14:13:13.520244",
      "status": "completed"
     },
     "tags": []
@@ -212,23 +263,23 @@
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "cb3f43ef",
+   "id": "751f6d00",
    "metadata": {
     "collapsed": true,
     "execution": {
-     "iopub.execute_input": "2023-08-31T13:41:16.405269Z",
-     "iopub.status.busy": "2023-08-31T13:41:16.404843Z",
-     "iopub.status.idle": "2023-08-31T13:41:16.412249Z",
-     "shell.execute_reply": "2023-08-31T13:41:16.410978Z"
+     "iopub.execute_input": "2023-08-31T14:13:13.543074Z",
+     "iopub.status.busy": "2023-08-31T14:13:13.542678Z",
+     "iopub.status.idle": "2023-08-31T14:13:13.550570Z",
+     "shell.execute_reply": "2023-08-31T14:13:13.549227Z"
     },
     "jupyter": {
      "outputs_hidden": true
     },
     "papermill": {
-     "duration": 0.017868,
-     "end_time": "2023-08-31T13:41:16.414762",
+     "duration": 0.018816,
+     "end_time": "2023-08-31T14:13:13.553021",
      "exception": false,
-     "start_time": "2023-08-31T13:41:16.396894",
+     "start_time": "2023-08-31T14:13:13.534205",
      "status": "completed"
     },
     "tags": []
@@ -238,7 +289,7 @@
      "data": {
       "text/markdown": [],
       "text/plain": [
-       "<learntools.core.constants.PlaceholderValue at 0x7bfac95570a0>"
+       "<learntools.core.constants.PlaceholderValue at 0x788db1ecf760>"
       ]
      },
      "execution_count": 4,
@@ -254,19 +305,19 @@
   {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "6cea9e8a",
+   "id": "fe8c96e5",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-08-31T13:41:16.432878Z",
-     "iopub.status.busy": "2023-08-31T13:41:16.432050Z",
-     "iopub.status.idle": "2023-08-31T13:41:16.442249Z",
-     "shell.execute_reply": "2023-08-31T13:41:16.441005Z"
+     "iopub.execute_input": "2023-08-31T14:13:13.571112Z",
+     "iopub.status.busy": "2023-08-31T14:13:13.570724Z",
+     "iopub.status.idle": "2023-08-31T14:13:13.581529Z",
+     "shell.execute_reply": "2023-08-31T14:13:13.580294Z"
     },
     "papermill": {
-     "duration": 0.022438,
-     "end_time": "2023-08-31T13:41:16.444527",
+     "duration": 0.022011,
+     "end_time": "2023-08-31T14:13:13.583948",
      "exception": false,
-     "start_time": "2023-08-31T13:41:16.422089",
+     "start_time": "2023-08-31T14:13:13.561937",
      "status": "completed"
     },
     "tags": []
@@ -275,7 +326,7 @@
     {
      "data": {
       "application/javascript": [
-       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 4, \"interactionType\": 1, \"questionType\": 1, \"questionId\": \"2_HomeDescription\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.5, \"interactionType\": 1, \"questionType\": 1, \"questionId\": \"2_HomeDescription\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
       ],
       "text/plain": [
        "<IPython.core.display.Javascript object>"
@@ -287,10 +338,10 @@
     {
      "data": {
       "text/markdown": [
-       "<span style=\"color:#ccaa33\">Check:</span> When you've updated the starter code, `check()` will tell you whether your code is correct. You need to update the code that creates variables `avg_lot_size`, `newest_home_age`"
+       "<span style=\"color:#33cc33\">Correct</span>"
       ],
       "text/plain": [
-       "Check: When you've updated the starter code, `check()` will tell you whether your code is correct. You need to update the code that creates variables `avg_lot_size`, `newest_home_age`"
+       "Correct"
       ]
      },
      "metadata": {},
@@ -299,10 +350,10 @@
    ],
    "source": [
     "# What is the average lot size (rounded to nearest integer)?\n",
-    "avg_lot_size = ____\n",
+    "avg_lot_size = 10517\n",
     "\n",
     "# As of today, how old is the newest home (current year - the date in which it was built)\n",
-    "newest_home_age = ____\n",
+    "newest_home_age = 13\n",
     "\n",
     "# Checks your answers\n",
     "step_2.check()"
@@ -311,38 +362,99 @@
   {
    "cell_type": "code",
    "execution_count": 6,
-   "id": "38a5d680",
+   "id": "7f32a627",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-08-31T13:41:16.460970Z",
-     "iopub.status.busy": "2023-08-31T13:41:16.460546Z",
-     "iopub.status.idle": "2023-08-31T13:41:16.465251Z",
-     "shell.execute_reply": "2023-08-31T13:41:16.464077Z"
+     "iopub.execute_input": "2023-08-31T14:13:13.601072Z",
+     "iopub.status.busy": "2023-08-31T14:13:13.600701Z",
+     "iopub.status.idle": "2023-08-31T14:13:13.613723Z",
+     "shell.execute_reply": "2023-08-31T14:13:13.612721Z"
     },
     "papermill": {
-     "duration": 0.015992,
-     "end_time": "2023-08-31T13:41:16.467840",
+     "duration": 0.024146,
+     "end_time": "2023-08-31T14:13:13.615715",
      "exception": false,
-     "start_time": "2023-08-31T13:41:16.451848",
+     "start_time": "2023-08-31T14:13:13.591569",
      "status": "completed"
     },
     "tags": []
    },
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 2, \"questionType\": 1, \"questionId\": \"2_HomeDescription\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#3366cc\">Hint:</span> Run the describe command. Lot size is in the column called LotArea. Also look at YearBuilt. Remember to round lot size "
+      ],
+      "text/plain": [
+       "Hint: Run the describe command. Lot size is in the column called LotArea. Also look at YearBuilt. Remember to round lot size "
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 3, \"questionType\": 1, \"questionId\": \"2_HomeDescription\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc99\">Solution:</span> \n",
+       "```python\n",
+       "# using data read from home_data.describe()\n",
+       "avg_lot_size = 10517\n",
+       "newest_home_age = 13\n",
+       "\n",
+       "```"
+      ],
+      "text/plain": [
+       "Solution: \n",
+       "```python\n",
+       "# using data read from home_data.describe()\n",
+       "avg_lot_size = 10517\n",
+       "newest_home_age = 13\n",
+       "\n",
+       "```"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
    "source": [
-    "#step_2.hint()\n",
-    "#step_2.solution()"
+    "step_2.hint()\n",
+    "step_2.solution()"
    ]
   },
   {
    "cell_type": "markdown",
-   "id": "084d5032",
+   "id": "942c99af",
    "metadata": {
     "papermill": {
-     "duration": 0.007236,
-     "end_time": "2023-08-31T13:41:16.482933",
+     "duration": 0.008102,
+     "end_time": "2023-08-31T14:13:13.632188",
      "exception": false,
-     "start_time": "2023-08-31T13:41:16.475697",
+     "start_time": "2023-08-31T14:13:13.624086",
      "status": "completed"
     },
     "tags": []
@@ -367,13 +479,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "46378905",
+   "id": "7c9aedba",
    "metadata": {
     "papermill": {
-     "duration": 0.007506,
-     "end_time": "2023-08-31T13:41:16.497902",
+     "duration": 0.008212,
+     "end_time": "2023-08-31T14:13:13.649100",
      "exception": false,
-     "start_time": "2023-08-31T13:41:16.490396",
+     "start_time": "2023-08-31T14:13:13.640888",
      "status": "completed"
     },
     "tags": []
@@ -422,14 +534,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 13.191908,
-   "end_time": "2023-08-31T13:41:17.427670",
+   "duration": 13.334043,
+   "end_time": "2023-08-31T14:13:14.782219",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2023-08-31T13:41:04.235762",
+   "start_time": "2023-08-31T14:13:01.448176",
    "version": "2.4.0"
   }
  },
