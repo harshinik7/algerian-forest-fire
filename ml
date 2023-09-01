@@ -2,13 +2,13 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "id": "0ba8a28a",
+   "id": "c62de83b",
    "metadata": {
     "papermill": {
-     "duration": 0.007657,
-     "end_time": "2023-09-01T09:27:40.170259",
+     "duration": 0.005955,
+     "end_time": "2023-09-01T09:28:31.805075",
      "exception": false,
-     "start_time": "2023-09-01T09:27:40.162602",
+     "start_time": "2023-09-01T09:28:31.799120",
      "status": "completed"
     },
     "tags": []
@@ -21,13 +21,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "70169bfa",
+   "id": "d4639354",
    "metadata": {
     "papermill": {
-     "duration": 0.006054,
-     "end_time": "2023-09-01T09:27:40.182993",
+     "duration": 0.004607,
+     "end_time": "2023-09-01T09:28:31.815218",
      "exception": false,
-     "start_time": "2023-09-01T09:27:40.176939",
+     "start_time": "2023-09-01T09:28:31.810611",
      "status": "completed"
     },
     "tags": []
@@ -40,19 +40,19 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "ad0f3c0b",
+   "id": "dfe86a6c",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-09-01T09:27:40.198778Z",
-     "iopub.status.busy": "2023-09-01T09:27:40.197853Z",
-     "iopub.status.idle": "2023-09-01T09:27:42.982578Z",
-     "shell.execute_reply": "2023-09-01T09:27:42.981657Z"
+     "iopub.execute_input": "2023-09-01T09:28:31.826729Z",
+     "iopub.status.busy": "2023-09-01T09:28:31.825945Z",
+     "iopub.status.idle": "2023-09-01T09:28:34.061004Z",
+     "shell.execute_reply": "2023-09-01T09:28:34.059822Z"
     },
     "papermill": {
-     "duration": 2.796477,
-     "end_time": "2023-09-01T09:27:42.985891",
+     "duration": 2.243956,
+     "end_time": "2023-09-01T09:28:34.063595",
      "exception": false,
-     "start_time": "2023-09-01T09:27:40.189414",
+     "start_time": "2023-09-01T09:28:31.819639",
      "status": "completed"
     },
     "tags": []
@@ -108,13 +108,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "cfb043ff",
+   "id": "3ff77b4e",
    "metadata": {
     "papermill": {
-     "duration": 0.006934,
-     "end_time": "2023-09-01T09:27:43.002401",
+     "duration": 0.004467,
+     "end_time": "2023-09-01T09:28:34.072773",
      "exception": false,
-     "start_time": "2023-09-01T09:27:42.995467",
+     "start_time": "2023-09-01T09:28:34.068306",
      "status": "completed"
     },
     "tags": []
@@ -127,19 +127,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "67e051a8",
+   "id": "f1c40daa",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-09-01T09:27:43.017100Z",
-     "iopub.status.busy": "2023-09-01T09:27:43.016475Z",
-     "iopub.status.idle": "2023-09-01T09:27:43.022892Z",
-     "shell.execute_reply": "2023-09-01T09:27:43.021914Z"
+     "iopub.execute_input": "2023-09-01T09:28:34.083752Z",
+     "iopub.status.busy": "2023-09-01T09:28:34.083361Z",
+     "iopub.status.idle": "2023-09-01T09:28:34.088737Z",
+     "shell.execute_reply": "2023-09-01T09:28:34.087607Z"
     },
     "papermill": {
-     "duration": 0.018086,
-     "end_time": "2023-09-01T09:27:43.026892",
+     "duration": 0.013422,
+     "end_time": "2023-09-01T09:28:34.090812",
      "exception": false,
-     "start_time": "2023-09-01T09:27:43.008806",
+     "start_time": "2023-09-01T09:28:34.077390",
      "status": "completed"
     },
     "tags": []
@@ -156,13 +156,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "57a20ad6",
+   "id": "cfe81cfd",
    "metadata": {
     "papermill": {
-     "duration": 0.006818,
-     "end_time": "2023-09-01T09:27:43.042809",
+     "duration": 0.004348,
+     "end_time": "2023-09-01T09:28:34.100069",
      "exception": false,
-     "start_time": "2023-09-01T09:27:43.035991",
+     "start_time": "2023-09-01T09:28:34.095721",
      "status": "completed"
     },
     "tags": []
@@ -177,19 +177,19 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "3ed457b6",
+   "id": "d03959f1",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-09-01T09:27:43.060567Z",
-     "iopub.status.busy": "2023-09-01T09:27:43.060012Z",
-     "iopub.status.idle": "2023-09-01T09:27:43.074960Z",
-     "shell.execute_reply": "2023-09-01T09:27:43.073591Z"
+     "iopub.execute_input": "2023-09-01T09:28:34.111543Z",
+     "iopub.status.busy": "2023-09-01T09:28:34.110812Z",
+     "iopub.status.idle": "2023-09-01T09:28:34.161927Z",
+     "shell.execute_reply": "2023-09-01T09:28:34.160647Z"
     },
     "papermill": {
-     "duration": 0.027201,
-     "end_time": "2023-09-01T09:27:43.078941",
+     "duration": 0.05957,
+     "end_time": "2023-09-01T09:28:34.164203",
      "exception": false,
-     "start_time": "2023-09-01T09:27:43.051740",
+     "start_time": "2023-09-01T09:28:34.104633",
      "status": "completed"
     },
     "tags": []
@@ -198,7 +198,7 @@
     {
      "data": {
       "application/javascript": [
-       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 4, \"interactionType\": 1, \"questionType\": 1, \"questionId\": \"1_BestTreeSize\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.5, \"interactionType\": 1, \"questionType\": 1, \"questionId\": \"1_BestTreeSize\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
       ],
       "text/plain": [
        "<IPython.core.display.Javascript object>"
@@ -210,10 +210,10 @@
     {
      "data": {
       "text/markdown": [
-       "<span style=\"color:#ccaa33\">Check:</span> When you've updated the starter code, `check()` will tell you whether your code is correct. You need to update the code that creates variable `best_tree_size`"
+       "<span style=\"color:#33cc33\">Correct</span>"
       ],
       "text/plain": [
-       "Check: When you've updated the starter code, `check()` will tell you whether your code is correct. You need to update the code that creates variable `best_tree_size`"
+       "Correct"
       ]
      },
      "metadata": {},
@@ -227,7 +227,8 @@
     "\n",
     "# Store the best value of max_leaf_nodes (it will be either 5, 25, 50, 100, 250 or 500)\n",
     "best_tree_size = ____\n",
-    "\n",
+    "scores = {leaf_size: get_mae(leaf_size, train_X, val_X, train_y, val_y) for leaf_size in candidate_max_leaf_nodes}\n",
+    "best_tree_size = min(scores, key=scores.get)\n",
     "# Check your answer\n",
     "step_1.check()"
    ]
@@ -235,39 +236,102 @@
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "764e4ba2",
+   "id": "9fe6da57",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-09-01T09:27:43.097416Z",
-     "iopub.status.busy": "2023-09-01T09:27:43.096382Z",
-     "iopub.status.idle": "2023-09-01T09:27:43.102467Z",
-     "shell.execute_reply": "2023-09-01T09:27:43.100860Z"
+     "iopub.execute_input": "2023-09-01T09:28:34.176016Z",
+     "iopub.status.busy": "2023-09-01T09:28:34.175565Z",
+     "iopub.status.idle": "2023-09-01T09:28:34.188257Z",
+     "shell.execute_reply": "2023-09-01T09:28:34.187282Z"
     },
     "papermill": {
-     "duration": 0.01985,
-     "end_time": "2023-09-01T09:27:43.106916",
+     "duration": 0.02098,
+     "end_time": "2023-09-01T09:28:34.190274",
      "exception": false,
-     "start_time": "2023-09-01T09:27:43.087066",
+     "start_time": "2023-09-01T09:28:34.169294",
      "status": "completed"
     },
     "tags": []
    },
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 2, \"questionType\": 1, \"questionId\": \"1_BestTreeSize\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#3366cc\">Hint:</span> You will call get_mae in the loop. You'll need to map the names of your data structure to the names in get_mae"
+      ],
+      "text/plain": [
+       "Hint: You will call get_mae in the loop. You'll need to map the names of your data structure to the names in get_mae"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 3, \"questionType\": 1, \"questionId\": \"1_BestTreeSize\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc99\">Solution:</span> \n",
+       "```python\n",
+       "# Here is a short solution with a dict comprehension.\n",
+       "# The lesson gives an example of how to do this with an explicit loop.\n",
+       "scores = {leaf_size: get_mae(leaf_size, train_X, val_X, train_y, val_y) for leaf_size in candidate_max_leaf_nodes}\n",
+       "best_tree_size = min(scores, key=scores.get)\n",
+       "\n",
+       "```"
+      ],
+      "text/plain": [
+       "Solution: \n",
+       "```python\n",
+       "# Here is a short solution with a dict comprehension.\n",
+       "# The lesson gives an example of how to do this with an explicit loop.\n",
+       "scores = {leaf_size: get_mae(leaf_size, train_X, val_X, train_y, val_y) for leaf_size in candidate_max_leaf_nodes}\n",
+       "best_tree_size = min(scores, key=scores.get)\n",
+       "\n",
+       "```"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
    "source": [
     "# The lines below will show you a hint or the solution.\n",
-    "# step_1.hint() \n",
-    "# step_1.solution()"
+    "step_1.hint() \n",
+    "step_1.solution()"
    ]
   },
   {
    "cell_type": "markdown",
-   "id": "56e5684d",
+   "id": "ee2341a0",
    "metadata": {
     "papermill": {
-     "duration": 0.006875,
-     "end_time": "2023-09-01T09:27:43.120801",
+     "duration": 0.005195,
+     "end_time": "2023-09-01T09:28:34.200781",
      "exception": false,
-     "start_time": "2023-09-01T09:27:43.113926",
+     "start_time": "2023-09-01T09:28:34.195586",
      "status": "completed"
     },
     "tags": []
@@ -280,19 +344,19 @@
   {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "970c288b",
+   "id": "9a06e291",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-09-01T09:27:43.137274Z",
-     "iopub.status.busy": "2023-09-01T09:27:43.136820Z",
-     "iopub.status.idle": "2023-09-01T09:27:43.147513Z",
-     "shell.execute_reply": "2023-09-01T09:27:43.146125Z"
+     "iopub.execute_input": "2023-09-01T09:28:34.213459Z",
+     "iopub.status.busy": "2023-09-01T09:28:34.212637Z",
+     "iopub.status.idle": "2023-09-01T09:28:34.220233Z",
+     "shell.execute_reply": "2023-09-01T09:28:34.219196Z"
     },
     "papermill": {
-     "duration": 0.022314,
-     "end_time": "2023-09-01T09:27:43.150577",
+     "duration": 0.016286,
+     "end_time": "2023-09-01T09:28:34.222357",
      "exception": false,
-     "start_time": "2023-09-01T09:27:43.128263",
+     "start_time": "2023-09-01T09:28:34.206071",
      "status": "completed"
     },
     "tags": []
@@ -337,19 +401,19 @@
   {
    "cell_type": "code",
    "execution_count": 6,
-   "id": "4bc7f31a",
+   "id": "dc1ae986",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-09-01T09:27:43.169270Z",
-     "iopub.status.busy": "2023-09-01T09:27:43.167856Z",
-     "iopub.status.idle": "2023-09-01T09:27:43.174065Z",
-     "shell.execute_reply": "2023-09-01T09:27:43.173148Z"
+     "iopub.execute_input": "2023-09-01T09:28:34.236036Z",
+     "iopub.status.busy": "2023-09-01T09:28:34.235434Z",
+     "iopub.status.idle": "2023-09-01T09:28:34.238884Z",
+     "shell.execute_reply": "2023-09-01T09:28:34.238119Z"
     },
     "papermill": {
-     "duration": 0.018403,
-     "end_time": "2023-09-01T09:27:43.176683",
+     "duration": 0.0126,
+     "end_time": "2023-09-01T09:28:34.240817",
      "exception": false,
-     "start_time": "2023-09-01T09:27:43.158280",
+     "start_time": "2023-09-01T09:28:34.228217",
      "status": "completed"
     },
     "tags": []
@@ -362,13 +426,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "c2972d17",
+   "id": "b192f60f",
    "metadata": {
     "papermill": {
-     "duration": 0.007601,
-     "end_time": "2023-09-01T09:27:43.191833",
+     "duration": 0.005498,
+     "end_time": "2023-09-01T09:28:34.252085",
      "exception": false,
-     "start_time": "2023-09-01T09:27:43.184232",
+     "start_time": "2023-09-01T09:28:34.246587",
      "status": "completed"
     },
     "tags": []
@@ -383,13 +447,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "f31f05e7",
+   "id": "d99636d4",
    "metadata": {
     "papermill": {
-     "duration": 0.007813,
-     "end_time": "2023-09-01T09:27:43.207150",
+     "duration": 0.005658,
+     "end_time": "2023-09-01T09:28:34.263320",
      "exception": false,
-     "start_time": "2023-09-01T09:27:43.199337",
+     "start_time": "2023-09-01T09:28:34.257662",
      "status": "completed"
     },
     "tags": []
@@ -441,14 +505,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 7.929542,
-   "end_time": "2023-09-01T09:27:43.939520",
+   "duration": 6.489213,
+   "end_time": "2023-09-01T09:28:34.891394",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2023-09-01T09:27:36.009978",
+   "start_time": "2023-09-01T09:28:28.402181",
    "version": "2.4.0"
   }
  },
