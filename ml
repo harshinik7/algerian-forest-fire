@@ -2,13 +2,13 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "id": "c62de83b",
+   "id": "9071f33a",
    "metadata": {
     "papermill": {
-     "duration": 0.005955,
-     "end_time": "2023-09-01T09:28:31.805075",
+     "duration": 0.007178,
+     "end_time": "2023-09-01T09:29:21.673650",
      "exception": false,
-     "start_time": "2023-09-01T09:28:31.799120",
+     "start_time": "2023-09-01T09:29:21.666472",
      "status": "completed"
     },
     "tags": []
@@ -21,13 +21,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "d4639354",
+   "id": "a760428e",
    "metadata": {
     "papermill": {
-     "duration": 0.004607,
-     "end_time": "2023-09-01T09:28:31.815218",
+     "duration": 0.005993,
+     "end_time": "2023-09-01T09:29:21.686253",
      "exception": false,
-     "start_time": "2023-09-01T09:28:31.810611",
+     "start_time": "2023-09-01T09:29:21.680260",
      "status": "completed"
     },
     "tags": []
@@ -40,19 +40,19 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "dfe86a6c",
+   "id": "01046e8b",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-09-01T09:28:31.826729Z",
-     "iopub.status.busy": "2023-09-01T09:28:31.825945Z",
-     "iopub.status.idle": "2023-09-01T09:28:34.061004Z",
-     "shell.execute_reply": "2023-09-01T09:28:34.059822Z"
+     "iopub.execute_input": "2023-09-01T09:29:21.701853Z",
+     "iopub.status.busy": "2023-09-01T09:29:21.701378Z",
+     "iopub.status.idle": "2023-09-01T09:29:24.180224Z",
+     "shell.execute_reply": "2023-09-01T09:29:24.178966Z"
     },
     "papermill": {
-     "duration": 2.243956,
-     "end_time": "2023-09-01T09:28:34.063595",
+     "duration": 2.490348,
+     "end_time": "2023-09-01T09:29:24.183482",
      "exception": false,
-     "start_time": "2023-09-01T09:28:31.819639",
+     "start_time": "2023-09-01T09:29:21.693134",
      "status": "completed"
     },
     "tags": []
@@ -108,13 +108,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "3ff77b4e",
+   "id": "055a3aae",
    "metadata": {
     "papermill": {
-     "duration": 0.004467,
-     "end_time": "2023-09-01T09:28:34.072773",
+     "duration": 0.0061,
+     "end_time": "2023-09-01T09:29:24.196121",
      "exception": false,
-     "start_time": "2023-09-01T09:28:34.068306",
+     "start_time": "2023-09-01T09:29:24.190021",
      "status": "completed"
     },
     "tags": []
@@ -127,19 +127,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "f1c40daa",
+   "id": "a89f5f4f",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-09-01T09:28:34.083752Z",
-     "iopub.status.busy": "2023-09-01T09:28:34.083361Z",
-     "iopub.status.idle": "2023-09-01T09:28:34.088737Z",
-     "shell.execute_reply": "2023-09-01T09:28:34.087607Z"
+     "iopub.execute_input": "2023-09-01T09:29:24.210825Z",
+     "iopub.status.busy": "2023-09-01T09:29:24.210373Z",
+     "iopub.status.idle": "2023-09-01T09:29:24.216324Z",
+     "shell.execute_reply": "2023-09-01T09:29:24.215527Z"
     },
     "papermill": {
-     "duration": 0.013422,
-     "end_time": "2023-09-01T09:28:34.090812",
+     "duration": 0.016087,
+     "end_time": "2023-09-01T09:29:24.218522",
      "exception": false,
-     "start_time": "2023-09-01T09:28:34.077390",
+     "start_time": "2023-09-01T09:29:24.202435",
      "status": "completed"
     },
     "tags": []
@@ -156,13 +156,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "cfe81cfd",
+   "id": "662bbffb",
    "metadata": {
     "papermill": {
-     "duration": 0.004348,
-     "end_time": "2023-09-01T09:28:34.100069",
+     "duration": 0.006259,
+     "end_time": "2023-09-01T09:29:24.231406",
      "exception": false,
-     "start_time": "2023-09-01T09:28:34.095721",
+     "start_time": "2023-09-01T09:29:24.225147",
      "status": "completed"
     },
     "tags": []
@@ -177,19 +177,19 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "d03959f1",
+   "id": "b5a2e692",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-09-01T09:28:34.111543Z",
-     "iopub.status.busy": "2023-09-01T09:28:34.110812Z",
-     "iopub.status.idle": "2023-09-01T09:28:34.161927Z",
-     "shell.execute_reply": "2023-09-01T09:28:34.160647Z"
+     "iopub.execute_input": "2023-09-01T09:29:24.246656Z",
+     "iopub.status.busy": "2023-09-01T09:29:24.245877Z",
+     "iopub.status.idle": "2023-09-01T09:29:24.300084Z",
+     "shell.execute_reply": "2023-09-01T09:29:24.298923Z"
     },
     "papermill": {
-     "duration": 0.05957,
-     "end_time": "2023-09-01T09:28:34.164203",
+     "duration": 0.065138,
+     "end_time": "2023-09-01T09:29:24.302991",
      "exception": false,
-     "start_time": "2023-09-01T09:28:34.104633",
+     "start_time": "2023-09-01T09:29:24.237853",
      "status": "completed"
     },
     "tags": []
@@ -236,19 +236,19 @@
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "9fe6da57",
+   "id": "0ab48aa0",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-09-01T09:28:34.176016Z",
-     "iopub.status.busy": "2023-09-01T09:28:34.175565Z",
-     "iopub.status.idle": "2023-09-01T09:28:34.188257Z",
-     "shell.execute_reply": "2023-09-01T09:28:34.187282Z"
+     "iopub.execute_input": "2023-09-01T09:29:24.319387Z",
+     "iopub.status.busy": "2023-09-01T09:29:24.318480Z",
+     "iopub.status.idle": "2023-09-01T09:29:24.332497Z",
+     "shell.execute_reply": "2023-09-01T09:29:24.331389Z"
     },
     "papermill": {
-     "duration": 0.02098,
-     "end_time": "2023-09-01T09:28:34.190274",
+     "duration": 0.024875,
+     "end_time": "2023-09-01T09:29:24.334955",
      "exception": false,
-     "start_time": "2023-09-01T09:28:34.169294",
+     "start_time": "2023-09-01T09:29:24.310080",
      "status": "completed"
     },
     "tags": []
@@ -325,13 +325,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "ee2341a0",
+   "id": "c2017619",
    "metadata": {
     "papermill": {
-     "duration": 0.005195,
-     "end_time": "2023-09-01T09:28:34.200781",
+     "duration": 0.007546,
+     "end_time": "2023-09-01T09:29:24.350045",
      "exception": false,
-     "start_time": "2023-09-01T09:28:34.195586",
+     "start_time": "2023-09-01T09:29:24.342499",
      "status": "completed"
     },
     "tags": []
@@ -344,19 +344,19 @@
   {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "9a06e291",
+   "id": "6e61778b",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-09-01T09:28:34.213459Z",
-     "iopub.status.busy": "2023-09-01T09:28:34.212637Z",
-     "iopub.status.idle": "2023-09-01T09:28:34.220233Z",
-     "shell.execute_reply": "2023-09-01T09:28:34.219196Z"
+     "iopub.execute_input": "2023-09-01T09:29:24.369418Z",
+     "iopub.status.busy": "2023-09-01T09:29:24.368900Z",
+     "iopub.status.idle": "2023-09-01T09:29:24.389406Z",
+     "shell.execute_reply": "2023-09-01T09:29:24.388201Z"
     },
     "papermill": {
-     "duration": 0.016286,
-     "end_time": "2023-09-01T09:28:34.222357",
+     "duration": 0.032059,
+     "end_time": "2023-09-01T09:29:24.391809",
      "exception": false,
-     "start_time": "2023-09-01T09:28:34.206071",
+     "start_time": "2023-09-01T09:29:24.359750",
      "status": "completed"
     },
     "tags": []
@@ -365,7 +365,7 @@
     {
      "data": {
       "application/javascript": [
-       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 2, \"failureMessage\": \"You still need to define the following variables: `final_model`\", \"interactionType\": 1, \"questionType\": 2, \"questionId\": \"2_FitModelWithAllData\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.5, \"interactionType\": 1, \"questionType\": 2, \"questionId\": \"2_FitModelWithAllData\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
       ],
       "text/plain": [
        "<IPython.core.display.Javascript object>"
@@ -377,10 +377,10 @@
     {
      "data": {
       "text/markdown": [
-       "<span style=\"color:#cc3333\">Incorrect:</span> You still need to define the following variables: `final_model`"
+       "<span style=\"color:#33cc33\">Correct</span>"
       ],
       "text/plain": [
-       "Incorrect: You still need to define the following variables: `final_model`"
+       "Correct"
       ]
      },
      "metadata": {},
@@ -393,7 +393,10 @@
     "\n",
     "# fit the final model and uncomment the next two lines\n",
     "# final_model.fit(____, ____)\n",
+    "final_model = DecisionTreeRegressor(max_leaf_nodes=best_tree_size, random_state=1)\n",
     "\n",
+    "# fit the final model\n",
+    "final_model.fit(X, y)\n",
     "# Check your answer\n",
     "step_2.check()"
    ]
@@ -401,38 +404,101 @@
   {
    "cell_type": "code",
    "execution_count": 6,
-   "id": "dc1ae986",
+   "id": "9f4cf945",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-09-01T09:28:34.236036Z",
-     "iopub.status.busy": "2023-09-01T09:28:34.235434Z",
-     "iopub.status.idle": "2023-09-01T09:28:34.238884Z",
-     "shell.execute_reply": "2023-09-01T09:28:34.238119Z"
+     "iopub.execute_input": "2023-09-01T09:29:24.410128Z",
+     "iopub.status.busy": "2023-09-01T09:29:24.409635Z",
+     "iopub.status.idle": "2023-09-01T09:29:24.425048Z",
+     "shell.execute_reply": "2023-09-01T09:29:24.423806Z"
     },
     "papermill": {
-     "duration": 0.0126,
-     "end_time": "2023-09-01T09:28:34.240817",
+     "duration": 0.027869,
+     "end_time": "2023-09-01T09:29:24.427659",
      "exception": false,
-     "start_time": "2023-09-01T09:28:34.228217",
+     "start_time": "2023-09-01T09:29:24.399790",
      "status": "completed"
     },
     "tags": []
    },
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 2, \"questionType\": 2, \"questionId\": \"2_FitModelWithAllData\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#3366cc\">Hint:</span> Fit with the ideal value of max_leaf_nodes. In the fit step, use all of the data in the dataset"
+      ],
+      "text/plain": [
+       "Hint: Fit with the ideal value of max_leaf_nodes. In the fit step, use all of the data in the dataset"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "application/javascript": [
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 3, \"questionType\": 2, \"questionId\": \"2_FitModelWithAllData\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Javascript object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/markdown": [
+       "<span style=\"color:#33cc99\">Solution:</span> \n",
+       "```python\n",
+       "# Fit the model with best_tree_size. Fill in argument to make optimal size\n",
+       "final_model = DecisionTreeRegressor(max_leaf_nodes=best_tree_size, random_state=1)\n",
+       "\n",
+       "# fit the final model\n",
+       "final_model.fit(X, y)\n",
+       "```"
+      ],
+      "text/plain": [
+       "Solution: \n",
+       "```python\n",
+       "# Fit the model with best_tree_size. Fill in argument to make optimal size\n",
+       "final_model = DecisionTreeRegressor(max_leaf_nodes=best_tree_size, random_state=1)\n",
+       "\n",
+       "# fit the final model\n",
+       "final_model.fit(X, y)\n",
+       "```"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
    "source": [
-    "# step_2.hint()\n",
-    "# step_2.solution()"
+    " step_2.hint()\n",
+    " step_2.solution()"
    ]
   },
   {
    "cell_type": "markdown",
-   "id": "b192f60f",
+   "id": "cc23ba73",
    "metadata": {
     "papermill": {
-     "duration": 0.005498,
-     "end_time": "2023-09-01T09:28:34.252085",
+     "duration": 0.008452,
+     "end_time": "2023-09-01T09:29:24.445173",
      "exception": false,
-     "start_time": "2023-09-01T09:28:34.246587",
+     "start_time": "2023-09-01T09:29:24.436721",
      "status": "completed"
     },
     "tags": []
@@ -447,13 +513,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "d99636d4",
+   "id": "ec3ac60c",
    "metadata": {
     "papermill": {
-     "duration": 0.005658,
-     "end_time": "2023-09-01T09:28:34.263320",
+     "duration": 0.008307,
+     "end_time": "2023-09-01T09:29:24.462229",
      "exception": false,
-     "start_time": "2023-09-01T09:28:34.257662",
+     "start_time": "2023-09-01T09:29:24.453922",
      "status": "completed"
     },
     "tags": []
@@ -505,14 +571,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 6.489213,
-   "end_time": "2023-09-01T09:28:34.891394",
+   "duration": 7.313267,
+   "end_time": "2023-09-01T09:29:25.092603",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2023-09-01T09:28:28.402181",
+   "start_time": "2023-09-01T09:29:17.779336",
    "version": "2.4.0"
   }
  },
