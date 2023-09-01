@@ -2,57 +2,57 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "id": "9071f33a",
+   "id": "97d6e1dd",
    "metadata": {
     "papermill": {
-     "duration": 0.007178,
-     "end_time": "2023-09-01T09:29:21.673650",
+     "duration": 0.005754,
+     "end_time": "2023-09-01T09:36:34.078620",
      "exception": false,
-     "start_time": "2023-09-01T09:29:21.666472",
+     "start_time": "2023-09-01T09:36:34.072866",
      "status": "completed"
     },
     "tags": []
    },
    "source": [
-    "**This notebook is an exercise in the [Introduction to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/dansbecker/underfitting-and-overfitting).**\n",
+    "**This notebook is an exercise in the [Introduction to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/dansbecker/random-forests).**\n",
     "\n",
     "---\n"
    ]
   },
   {
    "cell_type": "markdown",
-   "id": "a760428e",
+   "id": "f0a6f45a",
    "metadata": {
     "papermill": {
-     "duration": 0.005993,
-     "end_time": "2023-09-01T09:29:21.686253",
+     "duration": 0.004829,
+     "end_time": "2023-09-01T09:36:34.088880",
      "exception": false,
-     "start_time": "2023-09-01T09:29:21.680260",
+     "start_time": "2023-09-01T09:36:34.084051",
      "status": "completed"
     },
     "tags": []
    },
    "source": [
     "## Recap\n",
-    "You've built your first model, and now it's time to optimize the size of the tree to make better predictions. Run this cell to set up your coding environment where the previous step left off."
+    "Here's the code you've written so far."
    ]
   },
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "01046e8b",
+   "id": "4b30c090",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-09-01T09:29:21.701853Z",
-     "iopub.status.busy": "2023-09-01T09:29:21.701378Z",
-     "iopub.status.idle": "2023-09-01T09:29:24.180224Z",
-     "shell.execute_reply": "2023-09-01T09:29:24.178966Z"
+     "iopub.execute_input": "2023-09-01T09:36:34.101254Z",
+     "iopub.status.busy": "2023-09-01T09:36:34.100806Z",
+     "iopub.status.idle": "2023-09-01T09:36:36.364203Z",
+     "shell.execute_reply": "2023-09-01T09:36:36.363009Z"
     },
     "papermill": {
-     "duration": 2.490348,
-     "end_time": "2023-09-01T09:29:24.183482",
+     "duration": 2.273129,
+     "end_time": "2023-09-01T09:36:36.367147",
      "exception": false,
-     "start_time": "2023-09-01T09:29:21.693134",
+     "start_time": "2023-09-01T09:36:34.094018",
      "status": "completed"
     },
     "tags": []
@@ -62,7 +62,8 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Validation MAE: 29,653\n",
+      "Validation MAE when not specifying max_leaf_nodes: 29,653\n",
+      "Validation MAE for best value of max_leaf_nodes: 27,283\n",
       "\n",
       "Setup complete\n"
      ]
@@ -97,108 +98,90 @@
     "# Make validation predictions and calculate mean absolute error\n",
     "val_predictions = iowa_model.predict(val_X)\n",
     "val_mae = mean_absolute_error(val_predictions, val_y)\n",
-    "print(\"Validation MAE: {:,.0f}\".format(val_mae))\n",
+    "print(\"Validation MAE when not specifying max_leaf_nodes: {:,.0f}\".format(val_mae))\n",
+    "\n",
+    "# Using best value for max_leaf_nodes\n",
+    "iowa_model = DecisionTreeRegressor(max_leaf_nodes=100, random_state=1)\n",
+    "iowa_model.fit(train_X, train_y)\n",
+    "val_predictions = iowa_model.predict(val_X)\n",
+    "val_mae = mean_absolute_error(val_predictions, val_y)\n",
+    "print(\"Validation MAE for best value of max_leaf_nodes: {:,.0f}\".format(val_mae))\n",
+    "\n",
     "\n",
     "# Set up code checking\n",
     "from learntools.core import binder\n",
     "binder.bind(globals())\n",
-    "from learntools.machine_learning.ex5 import *\n",
+    "from learntools.machine_learning.ex6 import *\n",
     "print(\"\\nSetup complete\")"
    ]
   },
   {
    "cell_type": "markdown",
-   "id": "055a3aae",
+   "id": "f12ddd28",
    "metadata": {
     "papermill": {
-     "duration": 0.0061,
-     "end_time": "2023-09-01T09:29:24.196121",
+     "duration": 0.005012,
+     "end_time": "2023-09-01T09:36:36.377891",
      "exception": false,
-     "start_time": "2023-09-01T09:29:24.190021",
+     "start_time": "2023-09-01T09:36:36.372879",
      "status": "completed"
     },
     "tags": []
    },
    "source": [
     "# Exercises\n",
-    "You could write the function `get_mae` yourself. For now, we'll supply it. This is the same function you read about in the previous lesson. Just run the cell below."
+    "Data science isn't always this easy. But replacing the decision tree with a Random Forest is going to be an easy win."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cfc16ced",
+   "metadata": {
+    "papermill": {
+     "duration": 0.005014,
+     "end_time": "2023-09-01T09:36:36.388209",
+     "exception": false,
+     "start_time": "2023-09-01T09:36:36.383195",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "## Step 1: Use a Random Forest"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "a89f5f4f",
+   "id": "3badbdb2",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-09-01T09:29:24.210825Z",
-     "iopub.status.busy": "2023-09-01T09:29:24.210373Z",
-     "iopub.status.idle": "2023-09-01T09:29:24.216324Z",
-     "shell.execute_reply": "2023-09-01T09:29:24.215527Z"
+     "iopub.execute_input": "2023-09-01T09:36:36.401677Z",
+     "iopub.status.busy": "2023-09-01T09:36:36.400969Z",
+     "iopub.status.idle": "2023-09-01T09:36:37.097226Z",
+     "shell.execute_reply": "2023-09-01T09:36:37.096088Z"
     },
     "papermill": {
-     "duration": 0.016087,
-     "end_time": "2023-09-01T09:29:24.218522",
+     "duration": 0.7065,
+     "end_time": "2023-09-01T09:36:37.099991",
      "exception": false,
-     "start_time": "2023-09-01T09:29:24.202435",
-     "status": "completed"
-    },
-    "tags": []
-   },
-   "outputs": [],
-   "source": [
-    "def get_mae(max_leaf_nodes, train_X, val_X, train_y, val_y):\n",
-    "    model = DecisionTreeRegressor(max_leaf_nodes=max_leaf_nodes, random_state=0)\n",
-    "    model.fit(train_X, train_y)\n",
-    "    preds_val = model.predict(val_X)\n",
-    "    mae = mean_absolute_error(val_y, preds_val)\n",
-    "    return(mae)"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "id": "662bbffb",
-   "metadata": {
-    "papermill": {
-     "duration": 0.006259,
-     "end_time": "2023-09-01T09:29:24.231406",
-     "exception": false,
-     "start_time": "2023-09-01T09:29:24.225147",
-     "status": "completed"
-    },
-    "tags": []
-   },
-   "source": [
-    "## Step 1: Compare Different Tree Sizes\n",
-    "Write a loop that tries the following values for *max_leaf_nodes* from a set of possible values.\n",
-    "\n",
-    "Call the *get_mae* function on each value of max_leaf_nodes. Store the output in some way that allows you to select the value of `max_leaf_nodes` that gives the most accurate model on your data."
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 3,
-   "id": "b5a2e692",
-   "metadata": {
-    "execution": {
-     "iopub.execute_input": "2023-09-01T09:29:24.246656Z",
-     "iopub.status.busy": "2023-09-01T09:29:24.245877Z",
-     "iopub.status.idle": "2023-09-01T09:29:24.300084Z",
-     "shell.execute_reply": "2023-09-01T09:29:24.298923Z"
-    },
-    "papermill": {
-     "duration": 0.065138,
-     "end_time": "2023-09-01T09:29:24.302991",
-     "exception": false,
-     "start_time": "2023-09-01T09:29:24.237853",
+     "start_time": "2023-09-01T09:36:36.393491",
      "status": "completed"
     },
     "tags": []
    },
    "outputs": [
     {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Validation MAE for Random Forest Model: 22227.48086627528\n"
+     ]
+    },
+    {
      "data": {
       "application/javascript": [
-       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.5, \"interactionType\": 1, \"questionType\": 1, \"questionId\": \"1_BestTreeSize\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 1.0, \"interactionType\": 1, \"questionType\": 2, \"questionId\": \"1_CheckRfScore\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
       ],
       "text/plain": [
        "<IPython.core.display.Javascript object>"
@@ -221,34 +204,43 @@
     }
    ],
    "source": [
-    "candidate_max_leaf_nodes = [5, 25, 50, 100, 250, 500]\n",
-    "# Write loop to find the ideal tree size from candidate_max_leaf_nodes\n",
-    "_\n",
+    "from sklearn.ensemble import RandomForestRegressor\n",
     "\n",
-    "# Store the best value of max_leaf_nodes (it will be either 5, 25, 50, 100, 250 or 500)\n",
-    "best_tree_size = ____\n",
-    "scores = {leaf_size: get_mae(leaf_size, train_X, val_X, train_y, val_y) for leaf_size in candidate_max_leaf_nodes}\n",
-    "best_tree_size = min(scores, key=scores.get)\n",
+    "# Define the model. Set random_state to 1\n",
+    "\n",
+    "____\n",
+    "rf_model = RandomForestRegressor()\n",
+    "\n",
+    "rf_model.fit(train_X, train_y)\n",
+    "\n",
+    "# Calculate the mean absolute error of your Random Forest model on the validation data\n",
+    "rf_val_predictions = rf_model.predict(val_X)\n",
+    "rf_val_mae = mean_absolute_error(rf_val_predictions, val_y)\n",
+    "\n",
+    "\n",
+    "\n",
+    "print(\"Validation MAE for Random Forest Model: {}\".format(rf_val_mae))\n",
+    "\n",
     "# Check your answer\n",
     "step_1.check()"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 4,
-   "id": "0ab48aa0",
+   "execution_count": 3,
+   "id": "91101285",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2023-09-01T09:29:24.319387Z",
-     "iopub.status.busy": "2023-09-01T09:29:24.318480Z",
-     "iopub.status.idle": "2023-09-01T09:29:24.332497Z",
-     "shell.execute_reply": "2023-09-01T09:29:24.331389Z"
+     "iopub.execute_input": "2023-09-01T09:36:37.119003Z",
+     "iopub.status.busy": "2023-09-01T09:36:37.118196Z",
+     "iopub.status.idle": "2023-09-01T09:36:37.129406Z",
+     "shell.execute_reply": "2023-09-01T09:36:37.128615Z"
     },
     "papermill": {
-     "duration": 0.024875,
-     "end_time": "2023-09-01T09:29:24.334955",
+     "duration": 0.023782,
+     "end_time": "2023-09-01T09:36:37.132189",
      "exception": false,
-     "start_time": "2023-09-01T09:29:24.310080",
+     "start_time": "2023-09-01T09:36:37.108407",
      "status": "completed"
     },
     "tags": []
@@ -257,7 +249,7 @@
     {
      "data": {
       "application/javascript": [
-       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 2, \"questionType\": 1, \"questionId\": \"1_BestTreeSize\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 2, \"questionType\": 2, \"questionId\": \"1_CheckRfScore\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
       ],
       "text/plain": [
        "<IPython.core.display.Javascript object>"
@@ -269,10 +261,10 @@
     {
      "data": {
       "text/markdown": [
-       "<span style=\"color:#3366cc\">Hint:</span> You will call get_mae in the loop. You'll need to map the names of your data structure to the names in get_mae"
+       "<span style=\"color:#3366cc\">Hint:</span> Review the code above with a DecisionTreeRegressor. Use the RandomForestRegressor instead"
       ],
       "text/plain": [
-       "Hint: You will call get_mae in the loop. You'll need to map the names of your data structure to the names in get_mae"
+       "Hint: Review the code above with a DecisionTreeRegressor. Use the RandomForestRegressor instead"
       ]
      },
      "metadata": {},
@@ -281,7 +273,7 @@
     {
      "data": {
       "application/javascript": [
-       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 3, \"questionType\": 1, \"questionId\": \"1_BestTreeSize\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
+       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 3, \"questionType\": 2, \"questionId\": \"1_CheckRfScore\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
       ],
       "text/plain": [
        "<IPython.core.display.Javascript object>"
@@ -295,20 +287,28 @@
       "text/markdown": [
        "<span style=\"color:#33cc99\">Solution:</span> \n",
        "```python\n",
-       "# Here is a short solution with a dict comprehension.\n",
-       "# The lesson gives an example of how to do this with an explicit loop.\n",
-       "scores = {leaf_size: get_mae(leaf_size, train_X, val_X, train_y, val_y) for leaf_size in candidate_max_leaf_nodes}\n",
-       "best_tree_size = min(scores, key=scores.get)\n",
+       "rf_model = RandomForestRegressor()\n",
+       "\n",
+       "# fit your model\n",
+       "rf_model.fit(train_X, train_y)\n",
+       "\n",
+       "# Calculate the mean absolute error of your Random Forest model on the validation data\n",
+       "rf_val_predictions = rf_model.predict(val_X)\n",
+       "rf_val_mae = mean_absolute_error(rf_val_predictions, val_y)\n",
        "\n",
        "```"
       ],
       "text/plain": [
        "Solution: \n",
        "```python\n",
-       "# Here is a short solution with a dict comprehension.\n",
-       "# The lesson gives an example of how to do this with an explicit loop.\n",
-       "scores = {leaf_size: get_mae(leaf_size, train_X, val_X, train_y, val_y) for leaf_size in candidate_max_leaf_nodes}\n",
-       "best_tree_size = min(scores, key=scores.get)\n",
+       "rf_model = RandomForestRegressor()\n",
+       "\n",
+       "# fit your model\n",
+       "rf_model.fit(train_X, train_y)\n",
+       "\n",
+       "# Calculate the mean absolute error of your Random Forest model on the validation data\n",
+       "rf_val_predictions = rf_model.predict(val_X)\n",
+       "rf_val_mae = mean_absolute_error(rf_val_predictions, val_y)\n",
        "\n",
        "```"
       ]
@@ -320,206 +320,41 @@
    "source": [
     "# The lines below will show you a hint or the solution.\n",
     "step_1.hint() \n",
-    "step_1.solution()"
+    "step_1.solution()\n"
    ]
   },
   {
    "cell_type": "markdown",
-   "id": "c2017619",
+   "id": "f8ee1dd7",
    "metadata": {
     "papermill": {
-     "duration": 0.007546,
-     "end_time": "2023-09-01T09:29:24.350045",
+     "duration": 0.007382,
+     "end_time": "2023-09-01T09:36:37.148636",
      "exception": false,
-     "start_time": "2023-09-01T09:29:24.342499",
+     "start_time": "2023-09-01T09:36:37.141254",
      "status": "completed"
     },
     "tags": []
    },
    "source": [
-    "## Step 2: Fit Model Using All Data\n",
-    "You know the best tree size. If you were going to deploy this model in practice, you would make it even more accurate by using all of the data and keeping that tree size.  That is, you don't need to hold out the validation data now that you've made all your modeling decisions."
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 5,
-   "id": "6e61778b",
-   "metadata": {
-    "execution": {
-     "iopub.execute_input": "2023-09-01T09:29:24.369418Z",
-     "iopub.status.busy": "2023-09-01T09:29:24.368900Z",
-     "iopub.status.idle": "2023-09-01T09:29:24.389406Z",
-     "shell.execute_reply": "2023-09-01T09:29:24.388201Z"
-    },
-    "papermill": {
-     "duration": 0.032059,
-     "end_time": "2023-09-01T09:29:24.391809",
-     "exception": false,
-     "start_time": "2023-09-01T09:29:24.359750",
-     "status": "completed"
-    },
-    "tags": []
-   },
-   "outputs": [
-    {
-     "data": {
-      "application/javascript": [
-       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.5, \"interactionType\": 1, \"questionType\": 2, \"questionId\": \"2_FitModelWithAllData\", \"learnToolsVersion\": \"0.3.4\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
-      ],
-      "text/plain": [
-       "<IPython.core.display.Javascript object>"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "text/markdown": [
-       "<span style=\"color:#33cc33\">Correct</span>"
-      ],
-      "text/plain": [
-       "Correct"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    }
-   ],
-   "source": [
-    "# Fill in argument to make optimal size and uncomment\n",
-    "# final_model = DecisionTreeRegressor(____)\n",
+    "So far, you have followed specific instructions at each step of your project. This helped learn key ideas and build your first model, but now you know enough to try things on your own. \n",
     "\n",
-    "# fit the final model and uncomment the next two lines\n",
-    "# final_model.fit(____, ____)\n",
-    "final_model = DecisionTreeRegressor(max_leaf_nodes=best_tree_size, random_state=1)\n",
-    "\n",
-    "# fit the final model\n",
-    "final_model.fit(X, y)\n",
-    "# Check your answer\n",
-    "step_2.check()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 6,
-   "id": "9f4cf945",
-   "metadata": {
-    "execution": {
-     "iopub.execute_input": "2023-09-01T09:29:24.410128Z",
-     "iopub.status.busy": "2023-09-01T09:29:24.409635Z",
-     "iopub.status.idle": "2023-09-01T09:29:24.425048Z",
-     "shell.execute_reply": "2023-09-01T09:29:24.423806Z"
-    },
-    "papermill": {
-     "duration": 0.027869,
-     "end_time": "2023-09-01T09:29:24.427659",
-     "exception": false,
-     "start_time": "2023-09-01T09:29:24.399790",
-     "status": "completed"
-    },
-    "tags": []
-   },
-   "outputs": [
-    {
-     "data": {
-      "application/javascript": [
-       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 2, \"questionType\": 2, \"questionId\": \"2_FitModelWithAllData\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
-      ],
-      "text/plain": [
-       "<IPython.core.display.Javascript object>"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "text/markdown": [
-       "<span style=\"color:#3366cc\">Hint:</span> Fit with the ideal value of max_leaf_nodes. In the fit step, use all of the data in the dataset"
-      ],
-      "text/plain": [
-       "Hint: Fit with the ideal value of max_leaf_nodes. In the fit step, use all of the data in the dataset"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/javascript": [
-       "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"interactionType\": 3, \"questionType\": 2, \"questionId\": \"2_FitModelWithAllData\", \"learnToolsVersion\": \"0.3.4\", \"valueTowardsCompletion\": 0.0, \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\", \"outcomeType\": 4}}, \"*\")"
-      ],
-      "text/plain": [
-       "<IPython.core.display.Javascript object>"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "text/markdown": [
-       "<span style=\"color:#33cc99\">Solution:</span> \n",
-       "```python\n",
-       "# Fit the model with best_tree_size. Fill in argument to make optimal size\n",
-       "final_model = DecisionTreeRegressor(max_leaf_nodes=best_tree_size, random_state=1)\n",
-       "\n",
-       "# fit the final model\n",
-       "final_model.fit(X, y)\n",
-       "```"
-      ],
-      "text/plain": [
-       "Solution: \n",
-       "```python\n",
-       "# Fit the model with best_tree_size. Fill in argument to make optimal size\n",
-       "final_model = DecisionTreeRegressor(max_leaf_nodes=best_tree_size, random_state=1)\n",
-       "\n",
-       "# fit the final model\n",
-       "final_model.fit(X, y)\n",
-       "```"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    }
-   ],
-   "source": [
-    " step_2.hint()\n",
-    " step_2.solution()"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "id": "cc23ba73",
-   "metadata": {
-    "papermill": {
-     "duration": 0.008452,
-     "end_time": "2023-09-01T09:29:24.445173",
-     "exception": false,
-     "start_time": "2023-09-01T09:29:24.436721",
-     "status": "completed"
-    },
-    "tags": []
-   },
-   "source": [
-    "You've tuned this model and improved your results. But we are still using Decision Tree models, which are not very sophisticated by modern machine learning standards. In the next step you will learn to use Random Forests to improve your models even more.\n",
+    "Machine Learning competitions are a great way to try your own ideas and learn more as you independently navigate a machine learning project. \n",
     "\n",
     "# Keep Going\n",
     "\n",
-    "You are ready for **[Random Forests](https://www.kaggle.com/dansbecker/random-forests).**\n"
+    "You are ready for **[Machine Learning Competitions](https://www.kaggle.com/alexisbcook/machine-learning-competitions).**\n"
    ]
   },
   {
    "cell_type": "markdown",
-   "id": "ec3ac60c",
+   "id": "72d6d050",
    "metadata": {
     "papermill": {
-     "duration": 0.008307,
-     "end_time": "2023-09-01T09:29:24.462229",
+     "duration": 0.006146,
+     "end_time": "2023-09-01T09:36:37.161188",
      "exception": false,
-     "start_time": "2023-09-01T09:29:24.453922",
+     "start_time": "2023-09-01T09:36:37.155042",
      "status": "completed"
     },
     "tags": []
@@ -571,14 +406,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 7.313267,
-   "end_time": "2023-09-01T09:29:25.092603",
+   "duration": 7.408896,
+   "end_time": "2023-09-01T09:36:37.789258",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2023-09-01T09:29:17.779336",
+   "start_time": "2023-09-01T09:36:30.380362",
    "version": "2.4.0"
   }
  },
